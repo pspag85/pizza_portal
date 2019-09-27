@@ -8,13 +8,13 @@ const webpackConfig = require('../webpack.config')
 const compiler = webpack(webpackConfig)
 
 const app = express()
-const PORT = process.env.PORT || 7224
+const PORT = process.env.PORT || 7222
 
 app.listen(PORT, () => console.log(`Server Listening on ${PORT}`))
 
 app.use(require("webpack-hot-middleware")(compiler, {
-  'log': false, 
-  'path': '/__webpack_hmr', 
+  'log': false,
+  'path': '/__webpack_hmr',
   'heartbeat': 10 * 1000
 }))
 

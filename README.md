@@ -1,6 +1,6 @@
-# React Hot Module Replacement Boilerplate
+# pizza_portal
 
-Boilerplate for using Webpack's Hot Module Replacement with Node and React
+online ordering platform for daytona's finest pizza
 
 ## Setup
 
